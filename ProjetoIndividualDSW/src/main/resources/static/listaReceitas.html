@@ -9,11 +9,32 @@
     <title>Atividade Javascript</title>
 </head>
 <body>
-    <div class="position-absolute star-50 end-50">
-    <h1 class="align-text-bottom text-center">Receitas</h1>
-    <h3 class="align-text-bottom text-center">Não há receitas cadastradas</h3>
-    <a href="" class="position-absolute start-0 end-0 text-bg-success p-2 border border-0 rounded link-underline-opacity-25 link-underline-opacity-100-hover ">Incluir nova receita</a>
-    </div>    
+    <div class="d-flex justify-content-center text-center">
+        <div>
+            <h1 class="align-text-bottom">Receitas</h1>
+            <div class="content">
+                <table id="receitaTable">
+                  <thead>
+                    <tr>
+                      <th>Código</th>
+                      <th>Nome</th>
+                      <th>Quantidade</th>
+                      <th>Preço Unitário (R$)</th>
+                      <th>Descrição</th>
+                      <th>Categoria</th>
+                      <th>Ações</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Os produtos serão inseridos aqui dinamicamente -->
+                  </tbody>
+                </table>
+              </div>
+            <a href="form.html" class="btn btn-success p-2">Incluir nova receita</a>
+        </div>
+    </div>
+    
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
